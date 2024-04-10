@@ -1,0 +1,70 @@
+awk '{print}' Text1.txt OUTPUT: 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+
+awk '/manager/{print}' Text22.txt OUTPUT: 
+
+
+awk '{print ,}' Text22.txt OUTPUT: 
+
+purushotham 
+ram 
+charan 
+teja 
+krishna 
+venkatesh 
+ 
+
+awk '{sum +=  } END { print sum }' Text22.txt OUTPUT: 
+
+35700
+
+awk '{sum +=  } END { print sum / NR }' Text22.txt OUTPUT: 
+
+5100
+
+awk '{ print substr(,2,4) }' Text22.txt OUTPUT: 
+
+urus
+am
+hara
+eja
+rish
+enka
+
+
+awk '{ print  }' Text22.txt OUTPUT: 
+
+20
+32
+18
+20
+22
+60
+
+
+awk '{ if ( > 500) { print senior } else { print junior} }' Text22.txt OUTPUT: 
+
+senior
+senior
+senior
+senior
+senior
+senior
+junior
+
+awk 'function cube(x) { return x*x*x } {print cube() }' Text22.txt OUTPUT: 
+
+1e+12
+3.375e+09
+2.197e+09
+2.744e+09
+3.375e+09
+8e+12
+0

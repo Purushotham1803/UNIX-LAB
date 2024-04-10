@@ -1,0 +1,60 @@
+tar cvf file.tar *.txt OUTPUT: 
+
+awk.txt
+cpio.txt
+list1.txt
+list2.txt
+sed.txt
+tar.txt
+text1.txt
+Text22.txt
+text2.txt
+
+tar xvf file.tar OUTPUT: 
+
+awk.txt
+cpio.txt
+list1.txt
+list2.txt
+sed.txt
+tar.txt
+text1.txt
+Text22.txt
+text2.txt
+
+tar cvzf file.tar.gz *.txt OUTPUT: 
+
+awk.txt
+cpio.txt
+list1.txt
+list2.txt
+sed.txt
+tar.txt
+text1.txt
+Text22.txt
+text2.txt
+
+tar -czf - file.tar | wc -c OUTPUT: 
+
+1044
+
+tar -tvf file.tar OUTPUT: 
+
+1044
+
+tar -tvf file.tar OUTPUT: 
+
+-rw-rw-r-- student/student 840 2024-02-28 15:37 awk.txt
+-rw-rw-r-- student/student 527 2024-02-28 16:38 cpio.txt
+-rw-rw-r-- student/student  41 2024-02-14 15:08 list1.txt
+-rw-rw-r-- student/student 147 2024-02-14 15:41 list2.txt
+-rw-rw-r-- student/student 1455 2024-02-28 16:26 sed.txt
+-rw-rw-r-- student/student   69 2024-02-28 16:28 tar.txt
+-rw-rw-r-- student/student   20 2024-02-14 14:30 text1.txt
+-rw-rw-r-- student/student  139 2024-02-28 15:34 Text22.txt
+-rw-rw-r-- student/student   20 2024-02-14 15:16 text2.txt
+
+tar tvf file.tar Text22.txt OUTPUT: 
+
+-rw-rw-r-- student/student 139 2024-02-28 15:34 Text22.txt
+

@@ -1,0 +1,14 @@
+cpio -ov < Text22.txt > archive OUTPUT: 
+
+cpio: 1 purushotham 10000 20: Cannot stat: No such file or directory
+cpio: 2 ram         1500  32: Cannot stat: No such file or directory
+cpio: 3 charan      1300  18: Cannot stat: No such file or directory
+cpio: 4 teja        1400  20: Cannot stat: No such file or directory
+cpio: 5 krishna     1500  22: Cannot stat: No such file or directory
+cpio: 6 venkatesh   20000 60: Cannot stat: No such file or directory
+cpio: blank line ignored
+1 block
+
+cpio -iv < archive OUTPUT: 
+
+1 block

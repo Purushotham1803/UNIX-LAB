@@ -1,0 +1,80 @@
+sed 's/sales/accountant/' Text2.txt OUTPUT: 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+
+sed 's/sales/accountant/g' Text22.txt OUTPUT: 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+
+sed '8s/sales/accountant/' Text22.txt OUTPUT: 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+
+sed '8s/sales/accountant/p' Text22.txt OUTPUT: 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+
+sed -n '8s/sales/accountant/' Text22.txt OUTPUT: 
+
+
+sed '5d' Text22.txt OUTPUT : 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+6 venkatesh   20000 60
+
+
+sed '' Text22.txt OUTPUT : 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
+sed '3,7d' Text22.txt OUTPUT : 
+
+1 purushotham 10000 20
+2 ram         1500  32
+
+sed '3,' Text22.txt OUTPUT : 
+
+1 purushotham 10000 20
+2 ram         1500  32
+
+sed '/manager/d' Text22.txt OUTPUT : 
+
+1 purushotham 10000 20
+2 ram         1500  32
+3 charan      1300  18
+4 teja        1400  20
+5 krishna     1500  22
+6 venkatesh   20000 60
+
